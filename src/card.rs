@@ -11,16 +11,16 @@ impl Card {
     }
 
     pub fn read_card_from_stdin() -> Self {
-        let term_prompt = "Enter the term for the card".to_string();
-        let definition_prompt = "Now enter the definition for the card".to_string();
+        let term_prompt = "Enter the term for the card";
+        let definition_prompt = "Now enter the definition for the card";
         println!("{}", term_prompt);
         let term_entered: String = read!();
         println!("{}", definition_prompt);
         let definition_entered: String = read!();
 
         Card::new(
-            term_entered.to_string(),
-            definition_entered.to_string())
+            term_entered,
+            definition_entered)
     }
 
     pub fn check_answer(&self) {
