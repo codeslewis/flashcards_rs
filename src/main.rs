@@ -1,13 +1,6 @@
-struct Card {
-    term: String,
-    definition: String,
-}
+mod card;
 
-impl ToString for Card {
-    fn to_string(&self) -> String {
-        format!("Card:\n{}\nDefinition:\n{}", self.term, self.definition)
-    }
-}
+use card::Card;
 
 fn main() {
     let example = Card {
