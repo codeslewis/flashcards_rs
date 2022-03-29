@@ -14,7 +14,7 @@ impl Card {
         let term_prompt = "Enter the term for the card";
         let definition_prompt = "Now enter the definition for the card";
         println!("{}", term_prompt);
-        let term_entered: String = read!();
+        let term_entered = read!();
         println!("{}", definition_prompt);
         let definition_entered: String = read!();
 
