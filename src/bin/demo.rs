@@ -20,7 +20,3 @@ fn main() {
         card.check_answer();
     }
 }
-
-// First, ask the player to enter the desired number of cards.
-// Then, ask them to input the term and the definition for every flashcard.
-// For each card, give a term and ask for it's definition
